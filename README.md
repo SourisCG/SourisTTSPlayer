@@ -12,7 +12,6 @@ Es posible que las voces neuronales estén limitadas dependiendo de tu tipo de c
 * **Síntesis de Voz Neuronal:** Utiliza modelos avanzados para una pronunciación natural y fluida.
 * **Integración Nativa:** Se conecta directamente a los canales de voz de Discord.
 * **Procesamiento en RAM:** Manejo de buffers de audio directamente en memoria para evitar latencia y errores de lectura de archivos.
-* **Volumen Independiente:** El nivel de audio de la música se puede ajustar por separado sin afectar el volumen de las voces generadas por el bot.
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -32,7 +31,7 @@ Si no sabes de programación y es tu primera vez usando un bot local, asegúrate
 Puedes obtener el código de dos maneras, elige la que se te haga más fácil:
 
 **Opción 1: Descarga directa (Recomendado para principiantes)**
-[![Descargar ZIP directo](https://img.shields.io/badge/📥_Descargar_Código-ZIP_Directo-2ea44f?style=for-the-badge)](https://github.com/SourisCG/SourisTTSPlayer/archive/refs/heads/main.zip)
+[![📥 Descargar código (ZIP)](https://img.shields.io/badge/📥_Descargar_código_(ZIP)-success?style=for-the-badge)](https://github.com/SourisCG/SourisTTSPlayer/archive/refs/heads/main.zip)
 
 **Opción 2: Usando Git (Para desarrolladores)**
 ```bash
@@ -72,8 +71,8 @@ Para que el bot funcione, necesita unas "llaves de acceso" (tokens) para comunic
 
 1. Abre tu terminal o símbolo del sistema (cmd) y descarga el proyecto:
    ```bash
-   git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-   cd TU_REPOSITORIO
+   git clone [https://github.com/SourisCG/SourisTTSPlayer.git](https://github.com/SourisCG/SourisTTSPlayer.git)
+   cd SourisTTSPlayer
    ```
    *(Asegúrate de cambiar TU_USUARIO y TU_REPOSITORIO por tu enlace real)*
 
