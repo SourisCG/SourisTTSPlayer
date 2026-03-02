@@ -12,6 +12,7 @@ Es posible que las voces neuronales estén limitadas dependiendo de tu tipo de c
 * **Síntesis de Voz Neuronal:** Utiliza modelos avanzados para una pronunciación natural y fluida.
 * **Integración Nativa:** Se conecta directamente a los canales de voz de Discord.
 * **Procesamiento en RAM:** Manejo de buffers de audio directamente en memoria para evitar latencia y errores de lectura de archivos.
+* **Volumen Independiente:** El nivel de audio de la música se puede ajustar por separado sin afectar el volumen de las voces generadas por el bot.
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -25,6 +26,19 @@ Es posible que las voces neuronales estén limitadas dependiendo de tu tipo de c
 Si no sabes de programación y es tu primera vez usando un bot local, asegúrate de instalar esto en tu PC primero:
 * 🟢 **[Node.js](https://nodejs.org/es/):** (Descarga la versión LTS). Es el motor que hace que el código funcione en tu computadora.
 * 🟠 **[Git](https://git-scm.com/downloads):** La herramienta para descargar los archivos del proyecto fácilmente.
+
+## 📋 Descarga
+
+Puedes obtener el código de dos maneras, elige la que se te haga más fácil:
+
+**Opción 1: Descarga directa (Recomendado para principiantes)**
+[![Descargar ZIP directo](https://img.shields.io/badge/📥_Descargar_Código-ZIP_Directo-2ea44f?style=for-the-badge)](https://github.com/SourisCG/SourisTTSPlayer/archive/refs/heads/main.zip)
+
+**Opción 2: Usando Git (Para desarrolladores)**
+```bash
+git clone [https://github.com/SourisCG/SourisTTSPlayer.git](https://github.com/SourisCG/SourisTTSPlayer.git)
+cd SourisTTSPlayer
+```
 
 ---
 
