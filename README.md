@@ -20,28 +20,51 @@ Es posible que las voces neuronales estén limitadas dependiendo de tu tipo de c
 * **Audio:** @discordjs/voice y FFmpeg
 * **Peticiones:** Axios
 
+## 📋 Requisitos Previos
+
+Si no sabes de programación y es tu primera vez usando un bot local, asegúrate de instalar esto en tu PC primero:
+* Descarga e instala [Node.js](https://nodejs.org/es/) (se recomienda la versión LTS). Esto permite que el código del bot funcione en tu computadora.
+* Descarga e instala [Git](https://git-scm.com/downloads) para poder descargar los archivos del proyecto fácilmente.
+
+## 🔑 ¿Cómo conseguir los tokens?
+
+Antes de iniciar el bot, necesitas obtener unas "llaves" de acceso para que el bot pueda comunicarse con las distintas plataformas:
+
+* **DISCORD_TOKEN:** 1. Ve al [Discord Developer Portal](https://discord.com/developers/applications).
+  2. Haz clic en "New Application" y ponle un nombre a tu bot.
+  3. Ve a la pestaña **Bot** en el menú de la izquierda.
+  4. Haz clic en "Reset Token", cópialo y guárdalo en un lugar seguro. 
+  5. *Importante:* Más abajo en esa misma página, enciende el switch que dice **Message Content Intent** para que el bot pueda leer los comandos que escribes en el chat.
+* **ELEVENLABS_API_KEY:** 1. Entra a [ElevenLabs](https://elevenlabs.io/) e inicia sesión.
+  2. Haz clic en tu icono de perfil (abajo a la izquierda) y selecciona **Profile + API key**.
+  3. Copia la clave secreta que aparece ahí.
+* **SPOTIFY_CLIENT_ID y SECRET:** 1. Ve al [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) e inicia sesión con tu cuenta.
+  2. Haz clic en "Create app", llena los datos básicos y guárdala.
+  3. Dentro de tu nueva app, haz clic en "Settings" y ahí verás tu **Client ID** y la opción para revelar el **Client Secret**.
+
 ## 🚀 Instalación y Uso
 
-1. Clona este repositorio en tu máquina local.
+1. Abre tu terminal o símbolo del sistema (cmd) y descarga el proyecto:
+   ```bash
+   git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
+   cd TU_REPOSITORIO
+   ```
+   *(Asegúrate de cambiar TU_USUARIO y TU_REPOSITORIO por tu enlace real)*
+
 2. Instala las dependencias necesarias:
    ```bash
    npm install
    ```
 
-3. Obtén tus credenciales desde los portales oficiales:
-   * **DISCORD_TOKEN:** Créalo en el [Discord Developer Portal](https://discord.com/developers/applications).
-   * **ELEVENLABS_API_KEY:** Obtenlo en tu perfil de [ElevenLabs](https://elevenlabs.io/app/api-keys).
-   * **SPOTIFY_CLIENT_ID y SECRET:** Genéralos en el [Spotify Developer Dashboard](https://developer.spotify.com/dashboard).
-
-4. Crea un archivo `.env` en la raíz del proyecto y añade tus tokens:
+3. Crea un archivo nuevo llamado exactamente `.env` en la misma carpeta donde está el código y pega tus tokens así:
    ```env
-   DISCORD_TOKEN=tu_token_aqui
-   ELEVENLABS_API_KEY=tu_token_aqui
-   SPOTIFY_CLIENT_ID=tu_token_aqui
-   SPOTIFY_CLIENT_SECRET=tu_token_aqui
+   DISCORD_TOKEN=TuTokenAqui
+   ELEVENLABS_API_KEY=TuTokenAqui
+   SPOTIFY_CLIENT_ID=TuTokenAqui
+   SPOTIFY_CLIENT_SECRET=TuTokenAqui
    ```
 
-5. Inicia el bot:
+4. Inicia el bot:
    ```bash
    node index.js
    ```
