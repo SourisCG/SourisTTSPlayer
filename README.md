@@ -23,24 +23,36 @@ Es posible que las voces neuronales estén limitadas dependiendo de tu tipo de c
 ## 📋 Requisitos Previos
 
 Si no sabes de programación y es tu primera vez usando un bot local, asegúrate de instalar esto en tu PC primero:
-* Descarga e instala [Node.js](https://nodejs.org/es/) (se recomienda la versión LTS). Esto permite que el código del bot funcione en tu computadora.
-* Descarga e instala [Git](https://git-scm.com/downloads) para poder descargar los archivos del proyecto fácilmente.
+* 🟢 **[Node.js](https://nodejs.org/es/):** (Descarga la versión LTS). Es el motor que hace que el código funcione en tu computadora.
+* 🟠 **[Git](https://git-scm.com/downloads):** La herramienta para descargar los archivos del proyecto fácilmente.
 
-## 🔑 ¿Cómo conseguir los tokens?
+---
 
-Antes de iniciar el bot, necesitas obtener unas "llaves" de acceso para que el bot pueda comunicarse con las distintas plataformas:
+## 🔑 Guía paso a paso: ¿Cómo conseguir los tokens?
 
-* **DISCORD_TOKEN:** 1. Ve al [Discord Developer Portal](https://discord.com/developers/applications).
-  2. Haz clic en "New Application" y ponle un nombre a tu bot.
-  3. Ve a la pestaña **Bot** en el menú de la izquierda.
-  4. Haz clic en "Reset Token", cópialo y guárdalo en un lugar seguro. 
-  5. *Importante:* Más abajo en esa misma página, enciende el switch que dice **Message Content Intent** para que el bot pueda leer los comandos que escribes en el chat.
-* **ELEVENLABS_API_KEY:** 1. Entra a [ElevenLabs](https://elevenlabs.io/) e inicia sesión.
-  2. Haz clic en tu icono de perfil (abajo a la izquierda) y selecciona **Profile + API key**.
-  3. Copia la clave secreta que aparece ahí.
-* **SPOTIFY_CLIENT_ID y SECRET:** 1. Ve al [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) e inicia sesión con tu cuenta.
-  2. Haz clic en "Create app", llena los datos básicos y guárdala.
-  3. Dentro de tu nueva app, haz clic en "Settings" y ahí verás tu **Client ID** y la opción para revelar el **Client Secret**.
+Para que el bot funcione, necesita unas "llaves de acceso" (tokens) para comunicarse con Discord, Spotify y ElevenLabs. Sigue estos pasos para obtenerlos:
+
+### 👾 1. Discord Token (Para conectar el bot)
+1. Entra al 🌐 [Discord Developer Portal](https://discord.com/developers/applications).
+2. Arriba a la derecha, haz clic en el botón azul **"New Application"**, ponle un nombre y acepta.
+3. En el menú de la izquierda, entra a la sección 🧩 **"Bot"**.
+4. Busca el botón **"Reset Token"**, dale clic y **copia el código largo** que aparece. *(Este es tu `DISCORD_TOKEN`)*.
+5. ⚠️ **MUY IMPORTANTE:** En esa misma página, baja hasta la sección "Privileged Gateway Intents" y **enciende el interruptor** de **"Message Content Intent"**. Si no haces esto, el bot no podrá leer tus comandos. Guarda los cambios.
+
+### 🗣️ 2. ElevenLabs API Key (Para las voces neuronales)
+1. Entra a 🌐 [ElevenLabs](https://elevenlabs.io/) e inicia sesión.
+2. Haz clic en tu **ícono de perfil** (abajo a la izquierda).
+3. Selecciona **"Profile + API key"**.
+4. Haz clic en el ícono del ojo para revelar tu llave secreta y cópiala. *(Este es tu `ELEVENLABS_API_KEY`)*.
+
+### 🎵 3. Spotify Client ID & Secret (Para reproducir música)
+1. Ve al 🌐 [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) e inicia sesión con tu cuenta de Spotify.
+2. Haz clic en el botón verde **"Create app"**. Llena los datos básicos (nombre, descripción) y guarda.
+3. Dentro de tu nueva aplicación, haz clic en el botón ⚙️ **"Settings"** (Configuración).
+4. Ahí verás un código llamado **Client ID**. Cópialo. *(Este es tu `SPOTIFY_CLIENT_ID`)*.
+5. Justo debajo, haz clic en **"View client secret"** para revelar el segundo código y cópialo. *(Este es tu `SPOTIFY_CLIENT_SECRET`)*.
+
+---
 
 ## 🚀 Instalación y Uso
 
@@ -56,12 +68,12 @@ Antes de iniciar el bot, necesitas obtener unas "llaves" de acceso para que el b
    npm install
    ```
 
-3. Crea un archivo nuevo llamado exactamente `.env` en la misma carpeta donde está el código y pega tus tokens así:
+3. Crea un archivo nuevo llamado **exactamente** `.env` en la misma carpeta donde está el código. Abre ese archivo en un bloc de notas y pega tus tokens así:
    ```env
-   DISCORD_TOKEN=TuTokenAqui
-   ELEVENLABS_API_KEY=TuTokenAqui
-   SPOTIFY_CLIENT_ID=TuTokenAqui
-   SPOTIFY_CLIENT_SECRET=TuTokenAqui
+   DISCORD_TOKEN=PegaTuTokenDeDiscordAqui
+   ELEVENLABS_API_KEY=PegaTuKeyDeElevenLabsAqui
+   SPOTIFY_CLIENT_ID=PegaTuIdDeSpotifyAqui
+   SPOTIFY_CLIENT_SECRET=PegaTuSecretDeSpotifyAqui
    ```
 
 4. Inicia el bot:
@@ -74,8 +86,8 @@ Antes de iniciar el bot, necesitas obtener unas "llaves" de acceso para que el b
 * `!entrar` - El bot se une al canal de voz donde te encuentras.
 * `!g [texto]` - Esta es la voz predeterminada, funcionará independientemente de las APIs.
 * `!jarvis [texto]` - El bot reproduce el texto introducido con la voz configurada.
-* `!h` - Menú de ayuda.
 * `!p [link]` - Reproduce la canción del enlace (YouTube o Spotify).
+* `!h` - Muestra el menú de ayuda en Discord.
 
 ## 📄 Licencia
 
