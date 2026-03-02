@@ -33,22 +33,22 @@ Si no sabes de programación y es tu primera vez usando un bot local, asegúrate
 Para que el bot funcione, necesita unas "llaves de acceso" (tokens) para comunicarse con Discord, Spotify y ElevenLabs. Sigue estos pasos para obtenerlos:
 
 ### 👾 1. Discord Token (Para conectar el bot)
-1. Entra al 🌐 [Discord Developer Portal](https://discord.com/developers/applications).
+1. Entra al [Discord Developer Portal](https://discord.com/developers/applications).
 2. Arriba a la derecha, haz clic en el botón azul **"New Application"**, ponle un nombre y acepta.
-3. En el menú de la izquierda, entra a la sección 🧩 **"Bot"**.
+3. En el menú de la izquierda, entra a la sección **"Bot"**.
 4. Busca el botón **"Reset Token"**, dale clic y **copia el código largo** que aparece. *(Este es tu `DISCORD_TOKEN`)*.
 5. ⚠️ **MUY IMPORTANTE:** En esa misma página, baja hasta la sección "Privileged Gateway Intents" y **enciende el interruptor** de **"Message Content Intent"**. Si no haces esto, el bot no podrá leer tus comandos. Guarda los cambios.
 
 ### 🗣️ 2. ElevenLabs API Key (Para las voces neuronales)
-1. Entra a 🌐 [ElevenLabs](https://elevenlabs.io/) e inicia sesión.
+1. Entra a [ElevenLabs](https://elevenlabs.io/) e inicia sesión.
 2. Haz clic en tu **ícono de perfil** (abajo a la izquierda).
 3. Selecciona **"Profile + API key"**.
 4. Haz clic en el ícono del ojo para revelar tu llave secreta y cópiala. *(Este es tu `ELEVENLABS_API_KEY`)*.
 
 ### 🎵 3. Spotify Client ID & Secret (Para reproducir música)
-1. Ve al 🌐 [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) e inicia sesión con tu cuenta de Spotify.
+1. Ve al [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) e inicia sesión con tu cuenta de Spotify.
 2. Haz clic en el botón verde **"Create app"**. Llena los datos básicos (nombre, descripción) y guarda.
-3. Dentro de tu nueva aplicación, haz clic en el botón ⚙️ **"Settings"** (Configuración).
+3. Dentro de tu nueva aplicación, haz clic en el botón **"Settings"** (Configuración).
 4. Ahí verás un código llamado **Client ID**. Cópialo. *(Este es tu `SPOTIFY_CLIENT_ID`)*.
 5. Justo debajo, haz clic en **"View client secret"** para revelar el segundo código y cópialo. *(Este es tu `SPOTIFY_CLIENT_SECRET`)*.
 
