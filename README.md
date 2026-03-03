@@ -25,6 +25,7 @@ Es posible que las voces neuronales estén limitadas dependiendo de tu tipo de c
 
 Si no sabes de programación y es tu primera vez usando un bot local, asegúrate de instalar esto en tu PC primero:
 * ![Node](https://img.icons8.com/color/24/nodejs.png) **[Node.js](https://nodejs.org/es/):** (Descarga la versión LTS). Es el motor que hace que el código funcione en tu computadora.
+* ![Python](https://img.icons8.com/color/24/python.png) **[Python](https://www.python.org/downloads/):** Necesario para la compatibilidad con el módulo de descargas de música (`youtube-dl`). *Nota importante: Al instalarlo, asegúrate de marcar la casilla "Add Python to PATH" en el instalador.*
 * ![Git](https://img.icons8.com/color/24/git.png) **[Git](https://git-scm.com/downloads) (Opcional):** Herramienta para descargar el código mediante comandos. No es necesario si prefieres descargar el archivo ZIP directamente.
 
 ## ![Descarga](https://img.icons8.com/fluency/32/download.png) Descarga
